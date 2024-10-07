@@ -31,7 +31,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Seaweed Script";
+  src: url();
+}
 body {
   margin: 0;
   padding: 0;
@@ -1302,17 +1305,17 @@ html {
   }
   #cta-1692 .cs-graphic-1 {
     /* 441px - 582px */
-    width: clamp(27.5625rem, 42vw, 36.375rem);
+    width: clamp(12.5rem, 42vw, 25rem);
     height: auto;
     top: 0;
-    right: -13.75rem;
+    right: 1rem;
   }
   #cta-1692 .cs-graphic-2 {
     /* 371px - 582px */
-    width: clamp(23.1875rem, 42vw, 36.375rem);
+    width: clamp(12.5rem, 42vw, 25rem);
     height: auto;
     bottom: 0;
-    left: -7.375rem;
+    left: -1.5rem;
   }
 }
 /* Tablet - 768px */
@@ -1327,10 +1330,10 @@ html {
     width: fit-content;
   }
   #cta-1692 .cs-graphic-1 {
-    right: -8.0625rem;
+    right: -4rem;
   }
   #cta-1692 .cs-graphic-2 {
-    left: -7.875rem;
+    left: -3.5rem;
   }
 }
 
@@ -1868,8 +1871,39 @@ html {
 /*-- -------------------------- -->
 <---        Instagram Feed      -->
 <--- -------------------------- -*/
+/*-- -------------------------- -->
+<---         CS-Content         -->
+<--- -------------------------- -*/
+
+/* you can place this CSS group in your global stylesheet that is loaded on every page of the site so all you need to do is copy and paste the HTML into any section and it will all work. Or piece it inside the media queries in whatever section you want to add it to. You can also remove the cs-topper, cs-title, and cs-text and if they aren't already in your global stylesheet you can paste them outside these media queries so all cs-topper, cs-title, and cs-text on your site will pull from 1 place. */
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #cs-content-831 {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  #cs-content-831 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+}
+
 .cs-instagram {
   background-color: #f7f7f7;
+  padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
 /*-- -------------------------- -->
@@ -2021,10 +2055,10 @@ html {
     width: 29.4375em;
     height: 42.5625em;
     box-sizing: border-box;
-    background-color: #dab692;
+    background-color: var(--primary);
     overflow: hidden;
-    border: 8px solid #dab692;
-    border-radius: 16.25rem;
+    border: 8px solid var(--primary);
+    /* border-radius: 16.25rem; */
     position: absolute;
     right: 0;
     z-index: -1;
@@ -2110,10 +2144,10 @@ html {
     height: 21.25em;
     height: 100%;
     box-sizing: border-box;
-    background-color: #dab692;
+    background-color: var(--primary);
     overflow: hidden;
-    border: 0.5em solid #dab692;
-    border-radius: 16.25rem;
+    border: 0.5em solid var(--primary);
+    /* border-radius: 16.25rem; */
     position: absolute;
     z-index: -1;
   }
@@ -2234,7 +2268,7 @@ html {
   }
   #reviews-608 .cs-icon {
     /* 30px - 40px */
-    width: clamp(1.875rem, 4vw, 2.5rem);
+    width: clamp(2.5rem, 4vw, 3.75rem);
     height: auto;
     margin: 0 0 2rem 0;
     display: block;
