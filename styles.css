@@ -18,26 +18,26 @@
   --headerFont: "Brygada", serif;
   --primaryFont: "Raleway", sans-serif;
 }
-@font-face {
+/* @font-face {
   font-family: "Brygada";
-  src: url("./Fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
+  src: url("../Fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("./Fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("../Fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Seaweed Script";
-  src: url("./Fonts/Seaweed_Script/SeaweedScript-Regular.ttf")
+  src: url("../Fonts/Seaweed_Script/SeaweedScript-Regular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 body {
   margin: 0;
   padding: 0;
