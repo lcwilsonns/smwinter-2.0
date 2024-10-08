@@ -18,26 +18,7 @@
   --headerFont: "Brygada", serif;
   --primaryFont: "Raleway", sans-serif;
 }
-/* @font-face {
-  font-family: "Brygada";
-  src: url("../Fonts/Brygada_1918/Brygada1918-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("../Fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Seaweed Script";
-  src: url("../Fonts/Seaweed_Script/SeaweedScript-Regular.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-} */
+
 body {
   margin: 0;
   padding: 0;
@@ -56,7 +37,7 @@ body {
   text-align: inherit;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: var(--primary);
+  color: #bb9741;
   margin-bottom: 0.25rem;
   display: block;
 }
@@ -500,7 +481,7 @@ html {
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--primary);
+    background: #bb9741;
     opacity: 1;
     top: 0;
     left: 0;
@@ -738,8 +719,7 @@ html {
     color: var(--headerColor);
   }
   #gallery-42 .cs-inline-link:hover {
-    background-color: #4e4b66;
-    color: #ccb5ba;
+    background-color: #bb9741;
     padding: 2px;
   }
   #gallery-42 a {
@@ -771,6 +751,7 @@ html {
     bottom: -0.1875rem;
     left: 0;
   }
+
   #gallery-42 .cs-link:hover svg {
     transform: translateX(0.4375rem);
   }
@@ -1669,7 +1650,7 @@ html {
     width: clamp(3.75rem, 10vw, 8.5rem);
     height: auto;
     position: absolute;
-    bottom: 0rem;
+    bottom: -0.5rem;
     /* 16px - 32px */
     right: clamp(1rem, 4vw, 2rem);
   }
