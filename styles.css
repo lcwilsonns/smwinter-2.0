@@ -1,3 +1,13 @@
+/* Tints and Shades */
+
+/*
+Primary light: #ccb5ba
+Tints: #D6C4C8
+Primary dark: #302c2d
+Shades: #4e4b66
+Topper & active button: #836a2e
+*/
+
 :root {
   --primary: #ccb5ba;
   --primaryLight: #ffba43;
@@ -37,7 +47,7 @@ body {
   text-align: inherit;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: #bb9741;
+  color: #836a2e;
   margin-bottom: 0.25rem;
   display: block;
 }
@@ -481,7 +491,7 @@ html {
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #bb9741;
+    background: #836a2e;
     opacity: 1;
     top: 0;
     left: 0;
@@ -1859,8 +1869,6 @@ html {
 <---         CS-Content         -->
 <--- -------------------------- -*/
 
-/* you can place this CSS group in your global stylesheet that is loaded on every page of the site so all you need to do is copy and paste the HTML into any section and it will all work. Or piece it inside the media queries in whatever section you want to add it to. You can also remove the cs-topper, cs-title, and cs-text and if they aren't already in your global stylesheet you can paste them outside these media queries so all cs-topper, cs-title, and cs-text on your site will pull from 1 place. */
-
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #cs-content-831 {
@@ -1949,7 +1957,7 @@ html {
   }
   #content-page-1944 h3 {
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--bodyTextColor);
   }
   #content-page-1944 h4,
   #content-page-1944 h5,
@@ -2245,7 +2253,7 @@ html {
     padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
     /* makes padding not affect height and width */
     box-sizing: border-box;
-    background-color: var(--primary);
+    background-color: #d6c4c8;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
